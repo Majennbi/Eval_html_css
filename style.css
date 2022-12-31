@@ -1,0 +1,89 @@
+html {
+    height: 100%;
+    margin: 16px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 100px;
+    grid-template-areas: 
+    "logo . hamnav";
+    box-shadow: 0 10px 10px 2px rgb(0 0 0 / 10%);
+
+}
+
+.logo {
+    grid-area: logo;
+    align-self: center;
+    width: 160px;
+    height: 60px;
+}
+
+
+#hamnav {
+    grid-area: hamnav;
+    align-self: center;
+    position: sticky;
+    top: 0;
+
+  }
+  
+  /* desktop */
+  #hamitems { display: flex; }
+  #hamitems a {
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 20px;
+    color: #6bc4c4;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  #hamitems a:hover { color: #1d1d1d }
+  
+
+  #hamnav label, #hamburger { display: none; }
+
+
+  /* Mobile and tablet */
+@media screen and (max-width: 1036px){
+
+    header {
+        box-shadow: none;
+    }
+
+    #hamitems a {
+      box-sizing: border-box;
+      display: inline-block;
+      width: 90%;
+      font-size: 1.2rem;
+      border-top: 1px solid #1d1d1d;
+    }
+   
+
+    #hamnav label { 
+      display: flex;
+      justify-content: right;
+      color: #049c9c;
+      font-style: normal;
+      font-size: 2em;
+      padding: 15px;
+    }
+    
+   
+    #hamitems { display: none; }
+    #hamnav input:checked ~ #hamitems { display: block; }
+  }
+
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
