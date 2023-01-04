@@ -1,14 +1,12 @@
 html {
     height: 100%;
+    width: 100%;
     font-family: 'Dosis', sans-serif;
     font-size: 16px;
+    margin: 0;
+    padding: 0;
 }
 
-body {
-    margin-top: 16px;
-    margin-left: 50px;
-    margin-right: 50px;
-}
 
 h2 {
     font-size: 1.6rem;
@@ -38,6 +36,7 @@ header {
     "logo . hamnav";
     box-shadow: 0 10px 10px 2px rgb(0 0 0 / 10%);
     font-size: 1.1rem;
+    margin: 0px;
 }
 
 .logo {
@@ -236,6 +235,8 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .history_img1{
@@ -248,7 +249,7 @@ footer {
     align-self: flex-start;
 }
 
-.history_art1, .history_art2, .history_art3 {
+.history_art1, .history_art2, .history_art3, p {
     font-size: 1.25rem;
     color: #454545;
     text-align: justify;
@@ -267,6 +268,8 @@ footer {
     
     .history {
         margin-top: 100px;
+        margin-left: 50px;
+        margin-right: 50px;
     }
 
     h2 {
@@ -293,6 +296,7 @@ footer {
         height: auto;
         align-items: center;
         box-shadow: 15px 25px  #e5efe9;
+        border-radius: 15px;
         padding: 0px;
     }
     
@@ -313,9 +317,9 @@ footer {
         height: 400px;
         justify-self: center;
         box-shadow: -15px 5px #e5efe9;
+        border-radius: 15px;
         margin-bottom: 0;
-        align-self: center;
-       
+        margin-right: 36px;
     }
 
     .history_art3 {
@@ -324,3 +328,137 @@ footer {
         align-self: start;
     }
 }
+
+/*FIN SECTION 2*/
+
+/*SECTION 3*/
+
+.Organization {
+    background: #e5efe9;
+    background-position: bottom 10px right 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.Organization > h2 {
+  padding: 50px 50px 0px 50px;
+}
+
+.Organization > p {
+  padding: 30px 50px 0 50px
+}
+
+.container{
+    width: 100%;
+    overflow: hidden;
+    padding: 30px 0;
+  }
+  .container .main-card{
+    display: flex;
+    justify-content: space-around;
+    width: 200%;
+    transition: 1s;
+  }
+  #two:checked ~ .main-card{
+    margin-left: -100%;
+  }
+  .container .main-card .cards{
+    width: calc(100% / 2 - 10px);
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+  .main-card .cards .card{
+    width: 80%;
+    background: #fff;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+    transition: all 0.4s ease;
+  }
+  .main-card .cards .card:hover{
+    transform: translateY(-15px);
+  }
+  .cards .card .content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .cards .card .content .img{
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    padding: 3px;
+   
+    margin-bottom: 14px;
+  }
+  .card .content .img img{
+    height: 100%;
+    width: 100%;
+    border: 6px solid #049c9c;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .card .content .name{
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .card .content .job{
+    font-size: 20px;
+    color: #049c9c;
+    text-transform: lowercase;
+  }
+  .card .content .media-icons{
+    margin-top: 10px;
+    display: flex;
+  
+  }
+   .container .button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 50px 20px 0px 20px;
+  }
+  .button label{
+    height: 15px;
+    width: 15px;
+    border-radius: 15px;
+    background: white;
+    border: 1px solid #049c9c;
+    margin: 0 4px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+  }
+  .button label.active{
+    width: 35px;
+  }
+  #one:checked ~ .button .one{
+    width: 35px;
+  }
+  #one:checked ~ .button .two{
+    width: 15px;
+  }
+  #two:checked ~ .button .one{
+    width: 15px;
+  }
+  #two:checked ~ .button .two{
+    width: 35px;
+  }
+  input[type="radio"]{
+    display: none;
+  }
+  @media (max-width: 1125px) {
+
+    .container .main-card .cards{
+      flex-wrap: wrap;
+    }
+    .main-card .cards .card{
+      width: 100%;
+      margin-bottom: 50px;
+    }
+  }
