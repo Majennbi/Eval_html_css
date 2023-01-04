@@ -1,10 +1,31 @@
 html {
     height: 100%;
-    margin: 16px;
-    padding-left: 50px;
-    padding-right: 50px;
     font-family: 'Dosis', sans-serif;
     font-size: 16px;
+}
+
+body {
+    margin-top: 16px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+h2 {
+    font-size: 1.6rem;
+    text-transform:uppercase;
+    padding: 60px 0 50px 0;
+    letter-spacing: 4px;
+    text-decoration:underline;
+    text-decoration-color: #049c9c;
+    text-decoration-thickness: 6px;
+    text-underline-offset: 14px; 
+}
+
+h3 {
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    color: #049c9c;
+    text-transform: uppercase;
 }
 
 /*HEADER*/
@@ -90,7 +111,7 @@ footer {
 
 /*MAIN*/
 
-
+/*SECTION 1 : MISSION BANNER*/
 .mission_banner {
     display: grid;
     grid-template-rows: 40% 30% 30%;
@@ -123,6 +144,7 @@ footer {
     padding: 0 15px 0 15px ;
     color: white;
     font-size: 1.7rem;
+    letter-spacing: 2px;
 }
 
 .mission_explanation {
@@ -196,7 +218,6 @@ footer {
     font-size: 1.6rem;
     font-weight: 300;
     padding: 0 35px 0 35px;
-
 }
 
 .mission_btn {
@@ -204,8 +225,102 @@ footer {
     justify-self: center;
     width: 200px;
     height: 70px;
-    font-size: 1.5rem;
-   
+    font-size: 1.5rem;  
 }
+}
+/*FIN SECTION 1*/
+
+/*SECTION2*/
+
+.history {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+.history_img1{
+    width: 100%;
+    height: 100%;
+    padding-bottom: 30px; 
+}
+
+.history > h2, h3 {
+    align-self: flex-start;
+}
+
+.history_art1, .history_art2, .history_art3 {
+    font-size: 1.25rem;
+    color: #454545;
+    text-align: justify;
+    font-weight: 300;
+    padding-bottom: 30px;
+}
+
+.history_old_pic {
+    width: 400px;
+    height: 400px;
+    margin-bottom: 50px;
+}
+
+
+@media screen and (min-width: 1125px){
+    
+    .history {
+        margin-top: 100px;
+    }
+
+    h2 {
+        padding: 0 0 10px 0;
+    }
+    .history {
+        display: grid;
+        grid-template-columns: 60% 40%;
+        grid-template-rows: 1fr 0.5fr 0.5fr;
+        grid-gap: 50px;
+        grid-template-areas: 
+        "history_img1 history_art1"
+        "history_art2 history_old_pic"
+        "history_art3 history_art3";
+    }
+
+    .history_art1, .history_art2, .history_art3 {
+        padding-bottom: 0px;
+    }
+    
+    .history_img1 {
+        grid-area: history_img1;
+        width: 100%;
+        height: auto;
+        align-items: center;
+        box-shadow: 15px 25px  #e5efe9;
+        padding: 0px;
+    }
+    
+
+    .history_art1 {
+        grid-area: history_art1;
+        margin-right: 50px;
+    }
+
+    .history_art2 {
+        grid-area: history_art2;
+        align-self: start;
+    }
+
+    .history_old_pic {
+        grid-area: history_old_pic;
+        width: 400px;
+        height: 400px;
+        justify-self: center;
+        box-shadow: -15px 5px #e5efe9;
+        margin-bottom: 0;
+        align-self: center;
+       
+    }
+
+    .history_art3 {
+        grid-area: history_art3;
+        margin-right: 50px;
+        align-self: start;
+    }
+}
