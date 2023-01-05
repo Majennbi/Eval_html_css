@@ -526,3 +526,54 @@ footer {
       padding-top: 30px;
     }
   }
+
+  /*FIN SECTION 4*/
+
+  /*SECTION 5*/
+
+  .donation {
+
+    background-image: linear-gradient(
+
+      rgba(4, 156, 156, 0.65), 
+
+      rgba(4, 156, 156, 0.65) 
+
+    ),
+    url("https://www.datocms-assets.com/14337/1568111419-dsc1919ab.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: auto;
+    min-height: 450px;
+    height: auto;
+
+    
+  }
+
+  .donation > h2 {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 1.8rem;
+  }
+
+  .donation > p {
+    color: white;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 900;
+    padding: 0 20px 0 20px;
+  }
+
+  .btn_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-top: 40px;
+  }
+
+  .donation_btn {
+    background-color: #e5efe9;
+    color:rgba(4, 156, 156)
+  }
