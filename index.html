@@ -295,6 +295,39 @@
               </div>
             </section>
 
+            <section class="form" id="contact">
+              <h2>Prenons contact !</h2>
+              <p>Vous avez une question ou vous souhaitez en savoir plus sur l'ilôt,
+                c'est ici que ça se passe !
+              </p>
+              <form class="form-horizontal" method="post" action="form.php">  
+                <div class="form-2col">
+                  <div class="form-horizontal form-2col left">     
+                  <label for="name">Nom</label>
+                  <input type="text" id="name" placeholder="nom" name="name" required>
+                </div> 
+                <div class="form-horizontal form-2col right">
+                  <label for="surname">Prénom</label>
+                  <input type="text" id="surname" placeholder="prénom" name="surname" required>
+                </div>
+                </div> 
+                  <label for="email">Email</label>
+                  <input type="email" id="email" placeholder="email@mail.com" name="email" required>
+                  
+                  <label for="message">Message</label>
+                  <textarea rows="10" id="message" placeholder="N'hésitez pas à détailler votre demande afin de faciliter nos futurs échanges !" 
+                  name="message" required></textarea>
+                   <div class="advert-wrapper">
+                    <p>Souhaitez-vous recevoir nos actualités?</p>
+                    <input type="radio" id="yes" name="news-question" value="yes" checked>
+                    <label for="yes">Oui</label>
+                    <input type="radio" id="no" name="news-question" value="no">
+                    <label for="no">Non</label>
+                  </div>
+                  <button class="send-button mission_btn" id="submit" type="submit">Envoyer</button>
+                </form>
+            </section>
+
         </main>
 
         <footer>
