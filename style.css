@@ -54,7 +54,10 @@ header {
   }
   
   /* desktop */
-  #hamitems { display: flex; }
+  #hamitems { 
+    display: flex; 
+  }
+
   #hamitems a {
     flex-grow: 1;
     flex-basis: 0;
@@ -75,7 +78,12 @@ header {
 
 header {
     box-shadow: none;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr;
+    margin: 40px 0px 40px 0px;
 }
+
 
 #hamitems a {
     box-sizing: border-box;
@@ -92,12 +100,14 @@ header {
     color: #049c9c;
     font-style: normal;
     font-size: 2em;
-    padding: 15px;
+    padding: 10px;
 }
     
    
 #hamitems { display: none; }
-#hamnav input:checked ~ #hamitems { display: block; }
+#hamnav input:checked ~ #hamitems { 
+  display: block; 
+}
 }
 
 main {
@@ -249,7 +259,7 @@ footer {
     align-self: flex-start;
 }
 
-.history_art1, .history_art2, .history_art3, .Organization > p, .details > p {
+.history_art1, .history_art2, .history_art3, .Organization > p, .details > p, .form > p {
     font-size: 1.25rem;
     color: #454545;
     text-align: justify;
@@ -571,9 +581,104 @@ footer {
     justify-content: center;
     align-items: flex-end;
     padding-top: 40px;
+    padding-bottom: 25px;
   }
 
   .donation_btn {
     background-color: #e5efe9;
     color:rgba(4, 156, 156)
   }
+
+  /*FIN SECTION 5*/
+
+  /*SECTION 6*/
+  .form {
+    margin-left: 16px;
+    margin-right: 16px;
+    
+  }
+  .form-horizontal {
+      display: flex;
+      flex-direction: column;
+      border-radius: 20px;
+      font-weight: 400;
+      border: #049c9c 2px solid;
+      padding: 25px;    
+    }
+    .form-horizontal > input, textarea, select {
+      margin-bottom: 1rem;
+      border-radius: 7px;
+      padding: 0.3rem;
+      border: solid 1px;
+      font-size: 1em;
+    }
+    textarea {
+      font-family: 'Istok Web', sans-serif;
+      max-width:100%;
+      letter-spacing: 1px;
+      font-size: 1em;
+    }
+    .form-horizontal > input:focus, textarea:focus, select:focus, button:focus {
+      outline: none;
+      -webkit-box-shadow: 0px 0px 11px -7px #bac4bf;
+      -moz-box-shadow: 0px 0px 11px -7px #bac4bf;
+      box-shadow: 0px 0px 11px -7px #bac4bf;
+      border: solid 1px #d5e1db;
+    }
+    .form-horizontal > label {
+      margin-bottom: 0.5rem;
+      color: #454545;
+      font-size: 1.2em;
+    }
+    .section-header {
+      text-align: center;
+      margin: 0 auto;
+      margin-bottom: 50px;
+      letter-spacing: 6px;
+      margin-bottom: 25px;
+      color:rgba(4, 156, 156, 0.65);
+      font-style: 'Istok Web', sans-serif;
+    }
+    .advert-wrapper {
+      color: #454545;
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+}
+
+#yes, #no {
+  display: inline-block;
+}
+
+.send-button {
+  
+  width: 150px;
+  height: 50px;
+}
+
+.form-2col  {
+  border: none;
+  padding: 0;
+}
+
+@media (min-width: 700px) {
+  
+.form-2col  {
+  display: flex;
+  flex-direction: row;
+}
+
+.left, .right{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.left {
+  padding-right: 20px;
+}
+
+.right {
+  padding-left: 20px;
+}
+
+}
