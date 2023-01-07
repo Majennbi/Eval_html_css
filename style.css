@@ -887,3 +887,115 @@ text-decoration: none;
   justify-content: flex-start;
   align-items: center;
 }
+
+/*PAGE EVENT*/
+
+/*SECTION 1 : MISSION BANNER*/
+.event_banner {
+  display: grid;
+  grid-template-rows: 40% 30% 30%;
+  grid-template-areas: 
+  "event_statement"
+  "event_explanation"
+  "event_btn";
+  margin-top: 10px;
+  background-image: linear-gradient(
+
+    rgba(4, 156, 156, 0.90), 
+
+    rgba(229, 239, 233, 0.75)
+
+  ),
+  url("https://www.datocms-assets.com/14337/1567041632-dsc0286.jpg?fm=pjpg&w=1300&h=600&fit=crop");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: 80vw;
+  min-height: 60vh;
+}
+
+.event_statement {
+  grid-area: event_statement;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  padding: 0 15px 0 15px ;
+  color: white;
+  font-size: 1.7rem;
+  letter-spacing: 2px;
+  text-shadow: #049c9c 1px 0 8px;
+  text-transform: uppercase;
+}
+
+.event_explanation {
+  grid-area: event_explanation;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: center;
+  margin-top: -10px;
+  padding: 0 15px 0 15px;
+  color: white;
+  font-weight:500;
+  font-size: 1.2rem;
+  text-shadow: #049c9c 1px 0 8px;
+}
+
+.event_btn {
+  grid-area: event_btn;
+  justify-self: center;
+  width: 170px;
+  height: 70px;
+  font-size: 1.2rem;
+  font-weight: 800;
+  background-color: #049c9c;
+  border: none;
+  border-radius: 15px;
+  color: white;
+}
+
+.event_btn:hover{
+  background-color: white;
+  color: #049c9c;
+}
+
+@media screen and (min-width: 1125px){
+
+.event_banner {
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: 80vw;
+  min-height: 70vh;
+}
+
+.event_statement {
+  grid-area: event_statement;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  font-size: 2.2rem;
+}
+
+.event_explanation {
+  grid-area: event_explanation;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: center;
+  margin-top: -10px;
+  font-size: 1.6rem;
+  font-weight: 300;
+  padding: 0 35px 0 35px;
+}
+
+.event_btn {
+  grid-area: event_btn;
+  justify-self: center;
+  width: 200px;
+  height: 70px;
+  font-size: 1.5rem;  
+}
+}
