@@ -999,3 +999,139 @@ text-decoration: none;
   font-size: 1.5rem;  
 }
 }
+/*FIN SECTION 1*/
+
+/*SECTION 2*/
+
+.next-event {
+  background-image: 
+  url("https://www.datocms-assets.com/14337/1570791231-7c175b09-72d2-4fc2-89fe-01df3ca5370c.jpg?fm=pjpg&w=1300&h=600&fit=crop");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: 80vw;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px;
+  border-radius: 15px;
+  box-shadow: 15px 15px #e5efe9;
+}
+
+.next-event-details {
+  background: linear-gradient(
+
+    rgba(4, 156, 156, 0.75), 
+
+    rgba(4, 156, 156, 0.75)
+
+  );
+  margin: 70px;
+  align-self: center;
+ 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 300;
+  border-radius: 15px;
+
+}
+.next-event-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+} 
+
+.main-event > h2 {
+  padding: 50px 50px 0px 50px;
+}
+
+@media screen and (max-width: 612px){
+  .main-event > h2 {
+    text-decoration: none;
+  }
+}
+ 
+@media screen and (min-width: 900px){
+  .next-event-details {
+    font-size: 1.5rem;
+  }
+
+  .next-event-title {
+    font-size: 1.8rem;
+  }
+}
+
+/*FIN SECTION 2*/
+
+/*SECTION 3*/
+
+ /*SECTION 4*/
+
+ .infos_background {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+.info1, .info2, .info3, .info4 {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background:#049c9c;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.infos_background > p {
+  text-align: center;
+  font-size: 1.3rem;
+  padding-bottom: 50px;
+}
+
+.fa-solid {
+justify-items: center;
+color: white ;
+}
+
+.infos-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+@media (min-width: 900px) {
+
+  .infos_section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "figure1 figure2"
+    "figure3 figure4";
+  }
+}
+
+@media (min-width: 1125px) {
+
+  .infos-title {
+    text-align: left;
+    padding-left: 50px;
+
+  }
+
+  .infos_section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "figure1 figure2 figure3 figure4";
+    padding-top: 30px;
+  }
+}
