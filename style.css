@@ -727,16 +727,19 @@ h3:after {
 .send-button-news {
   background-color: #e5efe9;
   color: #049c9c;
-  border: black 2px solid;
+  border: black 1px solid;
   font-size: 1rem;
   border-radius: 20px;
+  width: 100px;
+  margin-top: 15px;
 }
 
 .newsletterFooter > input {
-  width: 80%;
+  width: 70%;
   padding: 15px 0px 15px 15px;
   font-size: 16px;
   border-radius: 20px;
+  border: none
 }
 
 @media screen and (min-width: 900px) {
@@ -901,9 +904,9 @@ text-decoration: none;
   margin-top: 10px;
   background-image: linear-gradient(
 
-    rgba(4, 156, 156, 0.90), 
+    rgba(0, 0, 0, 0.45), 
 
-    rgba(229, 239, 233, 0.75)
+      rgba(0, 0, 0, 0.45)
 
   ),
   url("https://www.datocms-assets.com/14337/1567041632-dsc0286.jpg?fm=pjpg&w=1300&h=600&fit=crop");
@@ -1069,8 +1072,6 @@ text-decoration: none;
 
 /*SECTION 3*/
 
- /*SECTION 4*/
-
  .infos_background {
   width: 100%;
   display: flex;
@@ -1096,9 +1097,9 @@ text-decoration: none;
   padding-bottom: 50px;
 }
 
-.fa-solid {
+.fa-3x {
 justify-items: center;
-color: white ;
+color: white;
 }
 
 .infos-title {
@@ -1135,3 +1136,217 @@ color: white ;
     padding-top: 30px;
   }
 }
+
+/*FIN SECTION 3*/
+
+/*SECTION 4*/
+
+.next-events {
+background: #e5efe9;
+background-position: bottom 10px right 20px;
+margin: 0;
+padding: 0;
+}
+
+.next-events > h2 {
+padding: 50px 50px 50px 50px;
+}
+
+.next-events > p {
+padding: 30px 50px 0 50px
+}
+
+.nextevents-block{
+width: 100%;
+overflow: hidden;
+padding: 30px 0;
+}
+.nextevents-block .nextevents-maincard{
+display: flex;
+justify-content: space-around;
+width: 200%;
+transition: 1s;
+}
+#two:checked ~ .nextevents-maincard{
+margin-left: -100%;
+}
+.nextevents-block .nextevents-maincard .nextevents-cards{
+width: calc(100% / 2 - 10px);
+display: flex;
+gap: 30px;
+justify-content: space-between;
+margin-right: 50px;
+margin-left: 50px;
+}
+.nextevents-maincard .nextevents-cards .nextevents-card{
+width: 80%;
+background:#049c9c;
+border-radius: 12px;
+padding: 30px;
+box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+transition: all 0.4s ease;
+}
+.nextevents-maincard .nextevents-cards .nextevents-card:hover{
+transform: translateY(-15px);
+}
+.nextevents-cards .nextevents-card {
+width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+
+
+.nextevents-content1, .nextevents-content2, .nextevents-content3,.nextevents-content4,.nextevents-content5,.nextevents-content6  {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: 15px;
+}
+
+.nextevents-content1 {
+  background-image:linear-gradient(
+
+    rgba(0, 0, 0, 0.55), 
+
+      rgba(0, 0, 0, 0.55)
+
+  ),
+  url("https://www.datocms-assets.com/14337/1664539614-sans-titre-3.jpg?fm=pjpg&w=400&h=220&fit=crop");
+}
+
+.nextevents-content2 {
+  background-image: 
+  linear-gradient(
+
+    rgba(0, 0, 0, 0.55), 
+
+      rgba(0, 0, 0, 0.55)
+
+  ),
+  url("https://www.datocms-assets.com/14337/1575629016-apradis8112019.png?fm=pjpg&w=400&h=220&fit=crop");
+}
+
+.nextevents-content3 {
+  background-image: 
+  linear-gradient(
+
+    rgba(0, 0, 0, 0.55), 
+
+      rgba(0, 0, 0, 0.55)
+
+  ),
+  url("https://www.datocms-assets.com/14337/1572340771-capture.png?fm=pjpg");
+}
+
+.nextevents-content4 {
+  background-image: 
+  linear-gradient(
+
+    rgba(0, 0, 0, 0.55), 
+
+      rgba(0, 0, 0, 0.55)
+
+  ),
+  url("https://www.datocms-assets.com/14337/1571135025-img3899.jpg?fm=pjpg&w=400&h=220&fit=crop");
+}
+
+.nextevents-content5 {
+  background-image:
+  linear-gradient(
+
+    rgba(0, 0, 0, 0.55), 
+
+      rgba(0, 0, 0, 0.55)
+
+  ), 
+  url("https://www.datocms-assets.com/14337/1568987634-dsc0025.jpg?fm=pjpg&w=400&h=220&fit=crop");
+}
+
+.nextevents-content6 {
+  background-image: 
+  linear-gradient(
+
+    rgba(0, 0, 0, 0.55), 
+
+      rgba(0, 0, 0, 0.55)
+
+  ),
+  url("https://www.datocms-assets.com/14337/1568207687-img6406.jpg?fm=pjpg&w=400&h=220&fit=crop");
+}
+
+.nextevents-details > p, .nextevents-title, .nextevents-date {
+  color: white;
+}
+
+.nextevents-details > p {
+  padding: 20px;
+  text-align: left;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+.nextevents-title, .nextevents-date {
+  font-size: 1.5rem;
+  font-weight: 600;
+  
+}
+.nextevents-title {
+  padding: 20px 20px 0px 20px;
+} 
+.nextevents-card .nextevents-title{
+font-size: 20px;
+font-weight: 500;
+}
+.nextevents-card .nextevents-date{
+font-size: 20px;
+color: #049c9c;
+text-transform: lowercase;
+}
+.nextevents-block .button{
+width: 100%;
+display: flex;
+justify-content: center;
+margin: 50px 20px 0px 20px;
+}
+.button label{
+height: 15px;
+width: 15px;
+border-radius: 15px;
+background: white;
+border: 1px solid #049c9c;
+margin: 0 4px;
+cursor: pointer;
+transition: all 0.5s ease;
+}
+.button label.active{
+width: 35px;
+}
+#one:checked ~ .button .one{
+width: 35px;
+}
+#one:checked ~ .button .two{
+width: 15px;
+}
+#two:checked ~ .button .one{
+width: 15px;
+}
+#two:checked ~ .button .two{
+width: 35px;
+}
+input[type="radio"]{
+display: none;
+}
+@media (max-width: 1125px) {
+
+.nextevents-block .nextevents-maincard .nextevents-cards{
+  flex-wrap: wrap;
+}
+.nextevents-maincard .nextevents-cards .nextevents-card{
+  width: 100%;
+  margin-bottom: 50px;
+}
+}
+
