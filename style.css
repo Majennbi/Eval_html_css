@@ -1334,5 +1334,9 @@ input[type="radio"]{
     width: 100%;
     margin-bottom: 50px;
   }
+
+  .nextevents-block .button{
+    margin: 0;
+  }
 }
 
