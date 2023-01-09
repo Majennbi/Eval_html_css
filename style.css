@@ -599,8 +599,7 @@ header {
 
   /*SECTION 6*/
 .form {
-  margin-left: 16px;
-  margin-right: 16px; 
+  margin: 0 16px 26px 16px; 
 }
 
 .form-horizontal {
