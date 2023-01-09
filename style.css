@@ -45,41 +45,7 @@ header {
     z-index: 1;
 }
 
-@media screen and (max-width: 1125px){
 
-  header {
-      box-shadow: none;
-      display: grid;
-      grid-template-columns: 1fr 2fr 1fr;
-      grid-template-rows: 1fr;
-      margin: 40px 0px 40px 0px;
-  }
-  
-  
-  #hamitems a {
-      box-sizing: border-box;
-      display: inline-block;
-      width: 90%;
-      font-size: 1.2rem;
-      border-top: 1px solid #1d1d1d;
-  }
-     
-  
-  #hamnav label { 
-      display: flex;
-      justify-content: right;
-      color: #049c9c;
-      font-style: normal;
-      font-size: 2em;
-      padding: 10px;
-  }
-      
-     
-  #hamitems { display: none; }
-  #hamnav input:checked ~ #hamitems { 
-    display: block; 
-  }
-  }
 
 .logo {
     grid-area: logo;
@@ -112,6 +78,41 @@ header {
   
 #hamnav label, #hamburger { display: none; }
 
+@media screen and (max-width: 1125px){
+
+    header {
+        box-shadow: none;
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 1fr;
+        margin: 40px 0px 40px 0px;
+    }
+    
+    
+    #hamitems a {
+        box-sizing: border-box;
+        display: inline-block;
+        width: 90%;
+        font-size: 1.2rem;
+        border-top: 1px solid #1d1d1d;
+    }
+       
+    
+    #hamnav label { 
+        display: flex;
+        justify-content: right;
+        color: #049c9c;
+        font-style: normal;
+        font-size: 2em;
+        padding: 10px;
+    }
+        
+       
+    #hamitems { display: none; }
+    #hamnav input:checked ~ #hamitems { 
+      display: block; 
+    }
+    }
 
 
 /*MAIN*/
